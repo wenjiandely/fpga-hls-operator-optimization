@@ -1,0 +1,14 @@
+build/
+__pycache__/
+.ipynb_checkpoints/
+.Xil/
+*.jou
+*.str
+*.backup.*
+*.zip
+*.xsa
+*.dcp
+*.wdb
+*.wcfg
+.vscode/
+.DS_Store

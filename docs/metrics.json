@@ -1,0 +1,46 @@
+{
+  "environment": {
+    "tool": "Vitis HLS 2024.2",
+    "part": "xc7z020-clg484-1"
+  },
+  "metric": "estimated_clock_ns * execution_cycles",
+  "operators": [
+    {
+      "name": "hmac-sha256",
+      "baseline_cycles": 809,
+      "optimized_cycles": 591,
+      "baseline_clock_ns": 13.846,
+      "optimized_clock_ns": 12.985,
+      "cycle_measure": "cosim reported latency",
+      "evidence": "reports/sha256/",
+      "baseline_execution_ns": 11201.414,
+      "optimized_execution_ns": 7674.134999999999,
+      "speedup": 1.4596321279206061
+    },
+    {
+      "name": "lz4",
+      "baseline_cycles": 3390,
+      "optimized_cycles": 1471,
+      "baseline_clock_ns": 13.22,
+      "optimized_clock_ns": 9.735,
+      "cycle_measure": "cosim latency",
+      "evidence": "docs/assets/lz4-results.png",
+      "baseline_execution_ns": 44815.8,
+      "optimized_execution_ns": 14320.185,
+      "speedup": 3.129554541369403
+    },
+    {
+      "name": "cholesky",
+      "baseline_cycles": 4919,
+      "optimized_cycles": 1287,
+      "baseline_clock_ns": 6.276,
+      "optimized_clock_ns": 6.299,
+      "cycle_measure": "total execution, eight matrix transactions",
+      "optimized_transaction_latency": 160,
+      "evidence": "docs/assets/cholesky-results.png",
+      "baseline_execution_ns": 30871.644,
+      "optimized_execution_ns": 8106.813,
+      "speedup": 3.808111029574754
+    }
+  ]
+}

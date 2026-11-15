@@ -1,0 +1,7 @@
+FPGA HLS Operator Optimization
+
+Contains code derived from AMD/Xilinx Vitis Libraries and the hlstrack2025 competition test framework, distributed under Apache License 2.0. Existing copyright and license headers remain in their respective files.
+
+Publication changes: reduced dependency set, repository-relative Tcl build entry point, bilingual documentation, and a raw-LZ4 output checker. SHA-256/HMAC source is taken from the November 2, 2025 working tree. Optimized lz_compress.hpp, lz4_compress.hpp, and cholesky.hpp are restored from the complete numbered source listings on pages 149-177 of the supplied competition design report; PDF line wrapping was normalized against the archived source. The Cholesky kernel includes its required header directly instead of the vendor umbrella header. Historical report results are distinguished from newly executed checks.
+
+The report baseline figure, LZ4 results, and Cholesky results are reproduced as selected supporting evidence. No conversation histories, process notes, or full competition reports are included.
